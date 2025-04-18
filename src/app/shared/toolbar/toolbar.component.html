@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <span class="navbar-brand">{{ title }}</span>
+    <button
+      class="navbar-toggler"
+      type="button"
+      aria-controls="navbarContent"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-label="Toggle navigation"
+      (click)="isCollapsed = !isCollapsed">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse" #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" id="navbarContent">
+      <ul class="navbar-nav ms-auto">
+        @for (link of links; track $index) {
+          @if (link.dropdownList) {
+            <app-toolbar-dropdown [link]="link"></app-toolbar-dropdown>
+          } @else {
+            <app-toolbar-link [link]="link"></app-toolbar-link>
+          }
+        }
+      </ul>
+    </div>
+  </div>
+</nav>
