@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-header d-flex">
+    @if (icon) {
+      <i class="me-2 bi" [ngClass]="icon"></i>
+    }
+    <div>
+      <h5 class="card-title">{{ title }}</h5>
+      @if (subtitle) {
+        <h6 class="card-subtitle text-muted">{{ subtitle }}</h6>
+      }
+    </div>
+  </div>
+
+  <ng-content select="app-card-body"></ng-content>
+
+  <ng-content select="app-card-footer"></ng-content>
+</div>
