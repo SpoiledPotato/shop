@@ -7,7 +7,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
  * It supports both internal and external links, and applies appropriate styles and behaviors.
  */
 @Component({
-  selector: 'app-toolbar-link',
+  selector: 'ui-toolbar-link',
   imports: [RouterLink, RouterLinkActive],
   templateUrl: './toolbar-link.component.html',
   styleUrl: './toolbar-link.component.scss',

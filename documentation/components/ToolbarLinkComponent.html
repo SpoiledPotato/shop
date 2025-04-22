@@ -150,7 +150,7 @@ It supports both internal and external links, and applies appropriate styles and
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>app-toolbar-link</code></td>
+                <td class="col-md-9"><code>ui-toolbar-link</code></td>
             </tr>
 
 
@@ -262,7 +262,7 @@ import { RouterLink, RouterLinkActive } from &#x27;@angular/router&#x27;;
  * It supports both internal and external links, and applies appropriate styles and behaviors.
  */
 @Component({
-  selector: &#x27;app-toolbar-link&#x27;,
+  selector: &#x27;ui-toolbar-link&#x27;,
   imports: [RouterLink, RouterLinkActive],
   templateUrl: &#x27;./toolbar-link.component.html&#x27;,
   styleUrl: &#x27;./toolbar-link.component.scss&#x27;,
@@ -315,7 +315,7 @@ export class ToolbarLinkComponent {
         </div>
     </div>
 
-    
+
 </div>
 
 <script src="../js/libs/vis.min.js"></script>
@@ -323,7 +323,7 @@ export class ToolbarLinkComponent {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><!-- Render an external link if link.isExternal is true, otherwise render an internal router link --><li class="nav-item">  @if (link.isExternal) {    <a class="nav-link" [href]="link.url" target="_blank">{{ link.title }}</a>  } @else {    <a      class="nav-link"      [routerLink]="[link.url]"      routerLinkActive="active"      ariaCurrentWhenActive="page"      [queryParams]="link.queryParams">      {{ link.title }}    </a>  }</li></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ToolbarComponent', 'selector': 'app-toolbar'},{'name': 'ToolbarDropdownComponent', 'selector': 'app-toolbar-dropdown'},{'name': 'ToolbarLinkComponent', 'selector': 'app-toolbar-link'}];
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CardComponent', 'selector': 'ui-card'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ToolbarComponent', 'selector': 'ui-toolbar'},{'name': 'ToolbarDropdownComponent', 'selector': 'ui-toolbar-dropdown'},{'name': 'ToolbarLinkComponent', 'selector': 'ui-toolbar-link'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'ToolbarLinkComponent'};
 </script>

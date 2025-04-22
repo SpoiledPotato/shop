@@ -142,7 +142,7 @@
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>app-card</code></td>
+                <td class="col-md-9"><code>ui-card</code></td>
             </tr>
 
 
@@ -292,7 +292,7 @@ import { Component, Input } from &#x27;@angular/core&#x27;;
 
 
 @Component({
-  selector: &#x27;app-card&#x27;,
+  selector: &#x27;ui-card&#x27;,
   imports: [NgClass],
   templateUrl: &#x27;./card.component.html&#x27;,
 })
@@ -350,7 +350,7 @@ export class CardComponent {
         </div>
     </div>
 
-    
+
 </div>
 
 <script src="../js/libs/vis.min.js"></script>
@@ -358,7 +358,7 @@ export class CardComponent {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><div class="card">  <header class="card-header d-flex">    @if (icon) {      <i class="me-2 bi" [ngClass]="icon"></i>    }    <div>      <h5 class="card-title">{{ title }}</h5>      @if (subtitle) {        <h6 class="card-subtitle text-muted">{{ subtitle }}</h6>      }    </div>  </header>  <div class="card-body">    <ng-content select="[c-body]"></ng-content>  </div>  <footer class="card-footer d-flex justify-content-end">    <small class="text-muted">      <ng-content select="[c-footer]"></ng-content>    </small>  </footer></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ToolbarComponent', 'selector': 'app-toolbar'},{'name': 'ToolbarDropdownComponent', 'selector': 'app-toolbar-dropdown'},{'name': 'ToolbarLinkComponent', 'selector': 'app-toolbar-link'}];
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CardComponent', 'selector': 'ui-card'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ToolbarComponent', 'selector': 'ui-toolbar'},{'name': 'ToolbarDropdownComponent', 'selector': 'ui-toolbar-dropdown'},{'name': 'ToolbarLinkComponent', 'selector': 'ui-toolbar-link'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'CardComponent'};
 </script>

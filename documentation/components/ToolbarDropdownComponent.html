@@ -142,7 +142,7 @@
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>app-toolbar-dropdown</code></td>
+                <td class="col-md-9"><code>ui-toolbar-dropdown</code></td>
             </tr>
 
 
@@ -245,7 +245,7 @@ import { ToolbarLinkComponent } from &#x27;../toolbar-link/toolbar-link.componen
 import { NgbDropdownModule } from &#x27;@ng-bootstrap/ng-bootstrap&#x27;;
 
 @Component({
-  selector: &#x27;app-toolbar-dropdown&#x27;,
+  selector: &#x27;ui-toolbar-dropdown&#x27;,
   imports: [ToolbarLinkComponent, NgbDropdownModule],
   templateUrl: &#x27;./toolbar-dropdown.component.html&#x27;,
   styleUrl: &#x27;./toolbar-dropdown.component.scss&#x27;
@@ -261,7 +261,7 @@ export class ToolbarDropdownComponent {
   &lt;a class&#x3D;&quot;nav-link&quot; ngbDropdownToggle id&#x3D;&quot;navDropdown&quot; role&#x3D;&quot;button&quot;&gt;{{ link.title }}&lt;/a&gt;
   &lt;ul ngbDropdownMenu class&#x3D;&quot;dropdown-menu dropdown-menu-end&quot; aria-labelledby&#x3D;&quot;navDropdown&quot;&gt;
     @for (subLink of link.dropdownList; track $index) {
-      &lt;app-toolbar-link [link]&#x3D;&quot;subLink&quot;&gt;&lt;/app-toolbar-link&gt;
+      &lt;ui-toolbar-link [link]&#x3D;&quot;subLink&quot;&gt;&lt;/ui-toolbar-link&gt;
     }
   &lt;/ul&gt;
 &lt;/li&gt;
@@ -287,15 +287,15 @@ export class ToolbarDropdownComponent {
         </div>
     </div>
 
-    
+
 </div>
 
 <script src="../js/libs/vis.min.js"></script>
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><li class="nav-item" ngbDropdown>  <a class="nav-link" ngbDropdownToggle id="navDropdown" role="button">{{ link.title }}</a>  <ul ngbDropdownMenu class="dropdown-menu dropdown-menu-end" aria-labelledby="navDropdown">    @for (subLink of link.dropdownList; track $index) {      <app-toolbar-link [link]="subLink"></app-toolbar-link>    }  </ul></li></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ToolbarComponent', 'selector': 'app-toolbar'},{'name': 'ToolbarDropdownComponent', 'selector': 'app-toolbar-dropdown'},{'name': 'ToolbarLinkComponent', 'selector': 'app-toolbar-link'}];
+        var COMPONENT_TEMPLATE = '<div><li class="nav-item" ngbDropdown>  <a class="nav-link" ngbDropdownToggle id="navDropdown" role="button">{{ link.title }}</a>  <ul ngbDropdownMenu class="dropdown-menu dropdown-menu-end" aria-labelledby="navDropdown">    @for (subLink of link.dropdownList; track $index) {      <ui-toolbar-link [link]="subLink"></ui-toolbar-link>    }  </ul></li></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CardComponent', 'selector': 'ui-card'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ToolbarComponent', 'selector': 'ui-toolbar'},{'name': 'ToolbarDropdownComponent', 'selector': 'ui-toolbar-dropdown'},{'name': 'ToolbarLinkComponent', 'selector': 'ui-toolbar-link'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'ToolbarDropdownComponent'};
 </script>

@@ -5,7 +5,7 @@ import { ToolbarDropdownComponent } from './toolbar-dropdown/toolbar-dropdown.co
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-toolbar',
+  selector: 'ui-toolbar',
   imports: [ToolbarLinkComponent, ToolbarDropdownComponent, NgbCollapseModule],
   templateUrl: './toolbar.component.html',
   styleUrl: './toolbar.component.scss',

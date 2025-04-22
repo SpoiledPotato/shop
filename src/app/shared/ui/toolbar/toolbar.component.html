@@ -14,9 +14,9 @@
       <ul class="navbar-nav ms-auto">
         @for (link of links; track $index) {
           @if (link.dropdownList) {
-            <app-toolbar-dropdown [link]="link"></app-toolbar-dropdown>
+            <ui-toolbar-dropdown [link]="link"></ui-toolbar-dropdown>
           } @else {
-            <app-toolbar-link [link]="link"></app-toolbar-link>
+            <ui-toolbar-link [link]="link"></ui-toolbar-link>
           }
         }
       </ul>

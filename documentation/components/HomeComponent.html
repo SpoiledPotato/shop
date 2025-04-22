@@ -205,7 +205,7 @@ export class HomeComponent {}
         <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container&quot;&gt;
   &lt;div class&#x3D;&quot;row&quot;&gt;
     &lt;div class&#x3D;&quot;col-4&quot;&gt;
-      &lt;app-card title&#x3D;&quot;iPhone 14&quot; subtitle&#x3D;&quot;128GB&quot; icon&#x3D;&quot;bi-phone&quot;&gt;
+      &lt;ui-card title&#x3D;&quot;iPhone 14&quot; subtitle&#x3D;&quot;128GB&quot; icon&#x3D;&quot;bi-phone&quot;&gt;
         &lt;div c-body&gt;
           &lt;p&gt;
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam quas voluptatum aut eligendi dolores! Velit
@@ -219,10 +219,10 @@ export class HomeComponent {}
           Last updated 3 mins ago
           &lt;a href&#x3D;&quot;#&quot;&gt;Edit&lt;/a&gt;
         &lt;/div&gt;
-      &lt;/app-card&gt;
+      &lt;/ui-card&gt;
     &lt;/div&gt;
     &lt;div class&#x3D;&quot;col-4&quot;&gt;
-      &lt;app-card title&#x3D;&quot;iPhone 14 Pro&quot;&gt;
+      &lt;ui-card title&#x3D;&quot;iPhone 14 Pro&quot;&gt;
         &lt;ng-container c-body&gt;
           &lt;h5&gt;This is a title&lt;/h5&gt;
           &lt;h6&gt;This is a subtitle&lt;/h6&gt;
@@ -235,10 +235,10 @@ export class HomeComponent {}
         &lt;ng-container c-footer&gt;
           &lt;button&gt;Edit&lt;/button&gt;
         &lt;/ng-container&gt;
-      &lt;/app-card&gt;
+      &lt;/ui-card&gt;
     &lt;/div&gt;
     &lt;div class&#x3D;&quot;col-4&quot;&gt;
-      &lt;app-card title&#x3D;&quot;Chameleon&quot; icon&#x3D;&quot;bi-tree-fill&quot;&gt;
+      &lt;ui-card title&#x3D;&quot;Chameleon&quot; icon&#x3D;&quot;bi-tree-fill&quot;&gt;
         &lt;ng-container c-body&gt;
           &lt;img
             src&#x3D;&quot;https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg&quot;
@@ -258,7 +258,7 @@ export class HomeComponent {}
             &lt;i class&#x3D;&quot;bi bi-cart&quot;&gt;&lt;/i&gt;
           &lt;/button&gt;
         &lt;/ng-container&gt;
-      &lt;/app-card&gt;
+      &lt;/ui-card&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -284,15 +284,15 @@ export class HomeComponent {}
         </div>
     </div>
 
-    
+
 </div>
 
 <script src="../js/libs/vis.min.js"></script>
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="container">  <div class="row">    <div class="col-4">      <app-card title="iPhone 14" subtitle="128GB" icon="bi-phone">        <div c-body>          <p>            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam quas voluptatum aut eligendi dolores! Velit            temporibus sequi quidem accusamus, reiciendis possimus, quos rerum eos laborum ad eaque animi repellat            perferendis?          </p>          <button>Go somewhere</button>          <button>Go somewhere</button>        </div>        <div c-footer>          Last updated 3 mins ago          <a href="#">Edit</a>        </div>      </app-card>    </div>    <div class="col-4">      <app-card title="iPhone 14 Pro">        <ng-container c-body>          <h5>This is a title</h5>          <h6>This is a subtitle</h6>          <p>            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam quas voluptatum aut eligendi dolores! Velit            temporibus sequi quidem accusamus, reiciendis possimus, quos rerum eos laborum ad eaque animi repellat            perferendis?          </p>        </ng-container>        <ng-container c-footer>          <button>Edit</button>        </ng-container>      </app-card>    </div>    <div class="col-4">      <app-card title="Chameleon" icon="bi-tree-fill">        <ng-container c-body>          <img            src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"            alt="Placeholder image" />          <p>            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam quas voluptatum aut eligendi dolores! Velit            temporibus sequi quidem accusamus, reiciendis possimus, quos rerum eos laborum ad eaque animi repellat            perferendis?          </p>          <a href="#">Picture 1</a>          <a href="#">Picture 2</a>          <a href="#">Picture 3</a>        </ng-container>        <ng-container c-footer>          <button>Buy now</button>          <button>            <i class="bi bi-cart"></i>          </button>        </ng-container>      </app-card>    </div>  </div></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ToolbarComponent', 'selector': 'app-toolbar'},{'name': 'ToolbarDropdownComponent', 'selector': 'app-toolbar-dropdown'},{'name': 'ToolbarLinkComponent', 'selector': 'app-toolbar-link'}];
+        var COMPONENT_TEMPLATE = '<div><div class="container">  <div class="row">    <div class="col-4">      <ui-card title="iPhone 14" subtitle="128GB" icon="bi-phone">        <div c-body>          <p>            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam quas voluptatum aut eligendi dolores! Velit            temporibus sequi quidem accusamus, reiciendis possimus, quos rerum eos laborum ad eaque animi repellat            perferendis?          </p>          <button>Go somewhere</button>          <button>Go somewhere</button>        </div>        <div c-footer>          Last updated 3 mins ago          <a href="#">Edit</a>        </div>      </ui-card>    </div>    <div class="col-4">      <ui-card title="iPhone 14 Pro">        <ng-container c-body>          <h5>This is a title</h5>          <h6>This is a subtitle</h6>          <p>            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam quas voluptatum aut eligendi dolores! Velit            temporibus sequi quidem accusamus, reiciendis possimus, quos rerum eos laborum ad eaque animi repellat            perferendis?          </p>        </ng-container>        <ng-container c-footer>          <button>Edit</button>        </ng-container>      </ui-card>    </div>    <div class="col-4">      <ui-card title="Chameleon" icon="bi-tree-fill">        <ng-container c-body>          <img            src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"            alt="Placeholder image" />          <p>            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam quas voluptatum aut eligendi dolores! Velit            temporibus sequi quidem accusamus, reiciendis possimus, quos rerum eos laborum ad eaque animi repellat            perferendis?          </p>          <a href="#">Picture 1</a>          <a href="#">Picture 2</a>          <a href="#">Picture 3</a>        </ng-container>        <ng-container c-footer>          <button>Buy now</button>          <button>            <i class="bi bi-cart"></i>          </button>        </ng-container>      </ui-card>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CardComponent', 'selector': 'ui-card'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'ToolbarComponent', 'selector': 'ui-toolbar'},{'name': 'ToolbarDropdownComponent', 'selector': 'ui-toolbar-dropdown'},{'name': 'ToolbarLinkComponent', 'selector': 'ui-toolbar-link'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'HomeComponent'};
 </script>

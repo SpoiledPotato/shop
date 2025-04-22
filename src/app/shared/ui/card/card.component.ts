@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 
 
 @Component({
-  selector: 'app-card',
+  selector: 'ui-card',
   imports: [NgClass],
   templateUrl: './card.component.html',
 })
