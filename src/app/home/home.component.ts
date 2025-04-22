@@ -1,14 +1,10 @@
 import { Component } from '@angular/core';
-import { CardComponent } from "../shared/card/card.component";
-import { CardFooterComponent } from "../shared/card/card-footer/card-footer.component";
-import { CardBodyComponent } from "../shared/card/card-body/card-body.component";
+import { CardComponent } from '../shared/card/card.component';
 
 @Component({
   selector: 'app-home',
-  imports: [CardComponent, CardFooterComponent, CardBodyComponent],
+  imports: [CardComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
 })
-export class HomeComponent {
-
-}
+export class HomeComponent {}
