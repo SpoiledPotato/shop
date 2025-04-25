@@ -3,6 +3,12 @@
 /* Importing Bootstrap Icon SCSS file. */
 @use "bootstrap-icons/font/bootstrap-icons.scss";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
@@ -14,6 +20,13 @@ body {
 
 button {
   @extend .btn;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .card {
