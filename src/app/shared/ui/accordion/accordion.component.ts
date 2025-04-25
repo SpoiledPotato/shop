@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { AccordionItem } from './accordion-item.interface';
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgClass } from '@angular/common';
@@ -32,6 +32,7 @@ import {
       transition('open <=> closed', [animate('0.2s ease-in-out')]),
     ]),
   ],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AccordionComponent {
   readonly items = input<AccordionItem[]>([]);

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { ToolbarLink } from './interfaces/toolbar-link';
 import { ToolbarLinkComponent } from './toolbar-link/toolbar-link.component';
 import { ToolbarDropdownComponent } from './toolbar-dropdown/toolbar-dropdown.component';
@@ -9,10 +9,11 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [ToolbarLinkComponent, ToolbarDropdownComponent, NgbCollapseModule],
   templateUrl: './toolbar.component.html',
   styleUrl: './toolbar.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ToolbarComponent {
-  @Input() title: string = 'Toolbar';
-  @Input() links: ToolbarLink[] = [];
+  readonly title = input.required<string>();
+  readonly links = input.required<ToolbarLink[]>();
 
   isCollapsed: boolean = true;
 }

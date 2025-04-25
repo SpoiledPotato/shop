@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { ToolbarLink } from '../interfaces/toolbar-link';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
@@ -11,11 +11,12 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   imports: [RouterLink, RouterLinkActive],
   templateUrl: './toolbar-link.component.html',
   styleUrl: './toolbar-link.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ToolbarLinkComponent {
   /**
    * The link object containing the URL, title, and whether the link is external.
    * @type {ToolbarLink}
    */
-  @Input() link!: ToolbarLink;
+  link = input.required<ToolbarLink>();
 }

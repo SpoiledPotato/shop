@@ -22,13 +22,6 @@ button {
   @extend .btn;
 }
 
-a {
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
 .card {
   img {
     @extend .card-img;
@@ -43,8 +36,19 @@ a {
     @extend .card-subtitle;
     @extend .text-muted;
   }
-  button,
+
+  // Styles for links inside cards
   a {
+    @extend .card-link;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  button {
     @extend .card-link;
   }
 

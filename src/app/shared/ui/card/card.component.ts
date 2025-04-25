@@ -1,14 +1,15 @@
 import { NgClass } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 
 
 @Component({
   selector: 'ui-card',
   imports: [NgClass],
   templateUrl: './card.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CardComponent {
-  @Input() title: string = 'Card Title';
-  @Input() subtitle?: string;
-  @Input() icon?: string;
+  readonly title = input.required<string>();
+  readonly subtitle = input<string>();
+  readonly icon = input<string>();
 }

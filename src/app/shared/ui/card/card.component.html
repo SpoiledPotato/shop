@@ -1,12 +1,12 @@
 <div class="card">
   <header class="card-header d-flex">
-    @if (icon) {
-      <i class="me-2 bi" [ngClass]="icon"></i>
+    @if (icon()) {
+      <i class="me-2 bi" [ngClass]="icon()"></i>
     }
     <div>
-      <h5 class="card-title">{{ title }}</h5>
-      @if (subtitle) {
-        <h6 class="card-subtitle text-muted">{{ subtitle }}</h6>
+      <h5 class="card-title">{{ title() }}</h5>
+      @if (subtitle()) {
+        <h6 class="card-subtitle text-muted">{{ subtitle() }}</h6>
       }
     </div>
   </header>

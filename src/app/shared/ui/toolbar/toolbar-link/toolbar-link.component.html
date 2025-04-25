@@ -1,15 +1,15 @@
 <!-- Render an external link if link.isExternal is true, otherwise render an internal router link -->
 <li class="nav-item">
-  @if (link.isExternal) {
-    <a class="nav-link" [href]="link.url" target="_blank">{{ link.title }}</a>
+  @if (link().isExternal) {
+    <a class="nav-link" [href]="link().url" target="_blank">{{ link().title }}</a>
   } @else {
     <a
       class="nav-link"
-      [routerLink]="[link.url]"
+      [routerLink]="[link().url]"
       routerLinkActive="active"
       ariaCurrentWhenActive="page"
-      [queryParams]="link.queryParams">
-      {{ link.title }}
+      [queryParams]="link().queryParams">
+      {{ link().title }}
     </a>
   }
 </li>

@@ -1,7 +1,7 @@
 <li class="nav-item" ngbDropdown>
-  <a class="nav-link" ngbDropdownToggle id="navDropdown" role="button">{{ link.title }}</a>
+  <a class="nav-link" ngbDropdownToggle id="navDropdown" role="button">{{ link().title }}</a>
   <ul ngbDropdownMenu class="dropdown-menu dropdown-menu-end" aria-labelledby="navDropdown">
-    @for (subLink of link.dropdownList; track $index) {
+    @for (subLink of link().dropdownList; track $index) {
       <ui-toolbar-link [link]="subLink"></ui-toolbar-link>
     }
   </ul>
